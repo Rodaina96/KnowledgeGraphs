@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/"
+     xml:base="http://www.semanticweb.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/property/belongsto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/property/belongsto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Author"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/belongstoconference -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/property/belongstoconference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Edition"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Conference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/belongtojournal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/property/belongtojournal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Volume"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Journal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/cites -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/property/cites">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/correspondsto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/property/correspondsto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/presentedin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/property/presentedin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Edition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/publishedin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/property/publishedin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Paper"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Volume"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/reviews -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/property/reviews">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Reviewer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/reviewspaper -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/property/reviewspaper">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/writes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/property/writes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/property/authorname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/authorname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/cityedition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/cityedition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Edition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/conferencename -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/conferencename">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Conference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/journalname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/journalname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Journal"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/numvolume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/numvolume">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Volume"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/reviewcomment -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/reviewcomment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/reviewdecision -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/reviewdecision">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/urlPaper -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/urlPaper">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/yearPaper -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/yearPaper">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/yearedition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/yearedition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Edition"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/property/yearvolume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/property/yearvolume">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/Volume"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/property/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/property/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Author"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Conference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Conference"/>
+    
+
+
+    <!-- http://www.semanticweb.org/DemoPaper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/DemoPaper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Edition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Edition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/FullPaper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/FullPaper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Journal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Journal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/OpenAccessJournal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/OpenAccessJournal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Journal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Paper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Paper"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Review"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Reviewer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Reviewer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ShortPaper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ShortPaper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/SurveyPaper -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/SurveyPaper">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Volume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Volume"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/DemoPaper"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/FullPaper"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ShortPaper"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/SurveyPaper"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
